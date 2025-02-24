@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Rocket, Shield, ChevronRight, Mail, Phone, MapPin, TrendingUp, Clock, DollarSign, MessageCircle } from 'lucide-react';
+import { Phone, Rocket, Notebook as Robot, ChevronRight, Mail, MapPin, TrendingUp, Clock, DollarSign, MessageCircle } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, AreaChart, Area, BarChart, Bar, ResponsiveContainer } from 'recharts';
 
 const performanceData = [
@@ -86,19 +86,19 @@ function App() {
 
           <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-              <MessageSquare className="h-12 w-12 text-accent" />
+              <Phone className="h-12 w-12 text-accent" />
               <h3 className="mt-4 text-xl font-medium text-black">AI Strategy Consulting</h3>
-              <p className="mt-2 text-center text-gray-500">Develop a comprehensive AI roadmap for your business</p>
+              <p className="mt-2 text-center text-gray-500">Develop a comprehensive AI roadmap for your business. Your first consultation is on us.</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
               <Rocket className="h-12 w-12 text-accent" />
-              <h3 className="mt-4 text-xl font-medium text-black">Implementation Support</h3>
-              <p className="mt-2 text-center text-gray-500">Expert guidance in deploying AI solutions</p>
+              <h3 className="mt-4 text-xl font-medium text-black">Pre-developed AI tools</h3>
+              <p className="mt-2 text-center text-gray-500">Apply these general AI tools to automate your day to day work and systemns.</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-              <Shield className="h-12 w-12 text-accent" />
-              <h3 className="mt-4 text-xl font-medium text-black">AI Security & Compliance</h3>
-              <p className="mt-2 text-center text-gray-500">Ensure your AI systems are secure and compliant</p>
+              <Robot className="h-12 w-12 text-accent" />
+              <h3 className="mt-4 text-xl font-medium text-black">Custom made AI products</h3>
+              <p className="mt-2 text-center text-gray-500">We build premium AI tools, taylored to your specific needs. </p>
             </div>
           </div>
         </div>
@@ -248,10 +248,10 @@ function App() {
         href="https://chatgpt.com/g/g-67baea3faf24819190c4412d5616215c-web-mate"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-accent text-white p-4 rounded-full shadow-lg hover:bg-accent/90 transition-all duration-300 flex items-center gap-2 hover:pr-6 group"
+        className="fixed bottom-6 right-6 bg-accent text-white p-4 rounded-full shadow-lg hover:bg-accent/90 transition-colors duration-200 flex items-center gap-2 group"
       >
         <MessageCircle className="h-6 w-6" />
-        <span className="w-0 overflow-hidden whitespace-nowrap group-hover:w-auto transition-all duration-300 ease-in-out">
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-200 ease-in-out">
           Chat with AI
         </span>
       </a>
