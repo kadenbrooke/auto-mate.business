@@ -11,7 +11,7 @@ const performanceData = [
 ];
 
 const efficiencyData = [
-  { month: 'Jan', manual: 40, automated: 90 },
+  { month: 'Jan', manual: 41, automated: 90 },
   { month: 'Feb', manual: 42, automated: 91 },
   { month: 'Mar', manual: 45, automated: 92 },
   { month: 'Apr', manual: 41, automated: 93 },
