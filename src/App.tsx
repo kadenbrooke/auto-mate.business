@@ -216,7 +216,7 @@ function App() {
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <Mail className="h-8 w-8 text-accent" />
               <h3 className="mt-4 text-lg font-medium text-black">Email</h3>
-              <p className="mt-2 text-gray-500">kadenbrooke@gmail.com</p>
+              <p className="mt-2 text-gray-500">kaden@auto-mate.business</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <Phone className="h-8 w-8 text-accent" />
