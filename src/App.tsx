@@ -1,30 +1,5 @@
 import React from 'react';
-import { Phone, Rocket, Notebook as Robot, ChevronRight, Mail, MapPin, TrendingUp, Clock, DollarSign, MessageCircle } from 'lucide-react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, AreaChart, Area, BarChart, Bar, ResponsiveContainer } from 'recharts';
-
-const performanceData = [
-  { year: '2019', traditional: 100, aiEnhanced: 100 },
-  { year: '2020', traditional: 105, aiEnhanced: 130 },
-  { year: '2021', traditional: 110, aiEnhanced: 180 },
-  { year: '2022', traditional: 115, aiEnhanced: 250 },
-  { year: '2023', traditional: 120, aiEnhanced: 340 },
-];
-
-const efficiencyData = [
-  { month: 'Jan', manual: 41, automated: 90 },
-  { month: 'Feb', manual: 42, automated: 91 },
-  { month: 'Mar', manual: 45, automated: 92 },
-  { month: 'Apr', manual: 41, automated: 93 },
-  { month: 'May', manual: 44, automated: 95 },
-  { month: 'Jun', manual: 43, automated: 94 },
-];
-
-const costSavingsData = [
-  { category: 'Labor', traditional: 100000, withAI: 40000 },
-  { category: 'Operations', traditional: 80000, withAI: 45000 },
-  { category: 'Maintenance', traditional: 60000, withAI: 30000 },
-  { category: 'Training', traditional: 40000, withAI: 25000 },
-];
+import { Phone, Rocket, Notebook, ChevronRight, Mail, MapPin, TrendingUp, Clock, DollarSign, MessageCircle, Users, Briefcase } from 'lucide-react';
 
 function Logo() {
   return (
@@ -58,11 +33,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl tracking-tight font-black text-black sm:text-5xl md:text-6xl">
-              <span className="block">Transform Your Business</span>
+              <span className="block">Enhance Your Business</span>
               <span className="block text-accent">With AI Solutions</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Our AI tools will help you save time, cut costs, and increase revenue, so you focus on what is most important.
+              We believe in empowering people to escape desk-bound lives by nurturing creativity, growth, and connection.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
@@ -76,8 +51,78 @@ function App() {
         </div>
       </div>
 
+      {/* Impact Section (formerly AI Advantage) */}
+      <div id="impact" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-black text-black sm:text-4xl">The AI Advantage</h2>
+            <p className="mt-4 text-xl text-gray-500">Real data showing the transformative power of AI in business</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Advantage Card 1 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+              <Users className="h-16 w-16 text-accent mb-6" />
+              <h3 className="text-2xl font-bold text-black mb-4">Replace 18+ Employees</h3>
+              <p className="text-gray-600 text-lg">
+                AI tools can replace 18+ human employees in certain industries, dramatically reducing operational costs.
+              </p>
+            </div>
+
+            {/* Advantage Card 3 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+              <Briefcase className="h-16 w-16 text-accent mb-6" />
+              <h3 className="text-2xl font-bold text-black mb-4">Dual Benefits</h3>
+              <p className="text-gray-600 text-lg">
+                Businesses using AI report a reduction in costs along with an increase in revenue.
+              </p>
+            </div>
+          </div>
+
+          {/* McKinsey Chart */}
+          <div className="mt-8 bg-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-bold text-black mb-6 text-center">Automation Potential Across Industries</h3>
+            <div className="flex justify-center">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                alt="McKinsey chart showing 30% of hours worked today could be automated by 2030" 
+                className="max-w-full h-auto rounded-lg shadow-md"
+                onError={(e) => {
+                  e.currentTarget.src = "https://placehold.co/1200x800/e2e8f0/64748b?text=With+Generative+AI,+30%25+of+Hours+Worked+Today+Could+Be+Automated+by+2030";
+                }}
+              />
+            </div>
+            <p className="mt-6 text-gray-600 text-center text-lg">
+              According to McKinsey & Company research, with generative AI, 30% of hours worked today could be automated by 2030, with significant variations across different sectors and job roles.
+            </p>
+            <p className="mt-2 text-gray-500 text-center text-sm">
+              Source: McKinsey & Company
+            </p>
+          </div>
+
+          {/* Key Metrics */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <TrendingUp className="h-12 w-12 text-accent mx-auto" />
+              <h4 className="text-2xl font-bold text-black mt-4">240%</h4>
+              <p className="text-gray-600">Average Growth Rate</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <Clock className="h-12 w-12 text-accent mx-auto" />
+              <h4 className="text-2xl font-bold text-black mt-4">60%</h4>
+              <p className="text-gray-600">Time Saved</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <DollarSign className="h-12 w-12 text-accent mx-auto" />
+              <h4 className="text-2xl font-bold text-black mt-4">45%</h4>
+              <p className="text-gray-600">Cost Reduction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Services Section */}
-      <div id="services" className="py-24 bg-white">
+      <div id="services" className="py-24 bg-[#faf9f6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-black text-black sm:text-4xl">Our Services</h2>
@@ -96,97 +141,9 @@ function App() {
               <p className="mt-2 text-center text-gray-500">Apply these general AI tools to automate your day to day work and systemns.</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-              <Robot className="h-12 w-12 text-accent" />
+              <Notebook className="h-12 w-12 text-accent" />
               <h3 className="mt-4 text-xl font-medium text-black">Custom made AI products</h3>
               <p className="mt-2 text-center text-gray-500">We build premium AI tools, taylored to your specific needs. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Impact Section */}
-      <div id="impact" className="py-24 bg-[#faf9f6]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-black text-black sm:text-4xl">The AI Advantage</h2>
-            <p className="mt-4 text-xl text-gray-500">Real data showing the transformative power of AI in business</p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-16">
-            {/* Business Growth Chart */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-6">Business Growth Comparison</h3>
-              <div className="h-[400px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={performanceData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="year" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Line type="monotone" dataKey="traditional" stroke="#94a3b8" name="Traditional Business" />
-                    <Line type="monotone" dataKey="aiEnhanced" stroke="#0066FF" name="AI-Enhanced Business" strokeWidth={2} />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-              <p className="mt-4 text-gray-600">Businesses leveraging AI solutions show significantly higher growth rates compared to traditional approaches</p>
-            </div>
-
-            {/* Efficiency Metrics */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-6">Operational Efficiency</h3>
-              <div className="h-[400px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <AreaChart data={efficiencyData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="month" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Area type="monotone" dataKey="manual" stackId="1" stroke="#94a3b8" fill="#94a3b8" name="Manual Processes" />
-                    <Area type="monotone" dataKey="automated" stackId="1" stroke="#0066FF" fill="#0066FF" name="AI-Automated Processes" />
-                  </AreaChart>
-                </ResponsiveContainer>
-              </div>
-              <p className="mt-4 text-gray-600">AI automation consistently delivers higher operational efficiency across all business processes</p>
-            </div>
-
-            {/* Cost Savings */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-black mb-6">Annual Cost Comparison</h3>
-              <div className="h-[400px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={costSavingsData}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="category" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="traditional" fill="#94a3b8" name="Traditional Costs" />
-                    <Bar dataKey="withAI" fill="#0066FF" name="Costs with AI" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-              <p className="mt-4 text-gray-600">Significant cost reductions across all business operations with AI implementation</p>
-            </div>
-
-            {/* Key Metrics */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <TrendingUp className="h-12 w-12 text-accent mx-auto" />
-                <h4 className="text-2xl font-bold text-black mt-4">240%</h4>
-                <p className="text-gray-600">Average Growth Rate</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <Clock className="h-12 w-12 text-accent mx-auto" />
-                <h4 className="text-2xl font-bold text-black mt-4">60%</h4>
-                <p className="text-gray-600">Time Saved</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                <DollarSign className="h-12 w-12 text-accent mx-auto" />
-                <h4 className="text-2xl font-bold text-black mt-4">45%</h4>
-                <p className="text-gray-600">Cost Reduction</p>
-              </div>
             </div>
           </div>
         </div>
