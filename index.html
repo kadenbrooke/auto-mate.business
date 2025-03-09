@@ -11,4 +11,14 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+<foot>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://kadenbrooke.app.n8n.cloud/webhook/585679d0-c463-433e-bd09-b1baeb746da1/chat'
+	});
+</script>
+</foot>
 </html>

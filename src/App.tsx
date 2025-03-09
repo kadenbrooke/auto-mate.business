@@ -84,7 +84,7 @@ function App() {
             <h3 className="text-2xl font-bold text-black mb-6 text-center">Automation Potential Across Industries</h3>
             <div className="flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*0BkkEwIz_oU_WELcsha01g.png" 
                 alt="McKinsey chart showing 30% of hours worked today could be automated by 2030" 
                 className="max-w-full h-auto rounded-lg shadow-md"
                 onError={(e) => {
@@ -173,7 +173,7 @@ function App() {
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <Mail className="h-8 w-8 text-accent" />
               <h3 className="mt-4 text-lg font-medium text-black">Email</h3>
-              <p className="mt-2 text-gray-500">kaden@auto-mate.business</p>
+              <p className="mt-2 text-gray-500">kadenbrooke@gmail.com</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <Phone className="h-8 w-8 text-accent" />
@@ -199,19 +199,6 @@ function App() {
           <div className="text-center text-gray-400 mt-2">since 2025</div>
         </div>
       </footer>
-
-      {/* Floating Chat Button */}
-      <a
-        href="https://chatgpt.com/g/g-67baea3faf24819190c4412d5616215c-web-mate"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-accent text-white p-4 rounded-full shadow-lg hover:bg-accent/90 transition-colors duration-200 flex items-center gap-2 group"
-      >
-        <MessageCircle className="h-6 w-6" />
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-200 ease-in-out">
-          Chat with AI
-        </span>
-      </a>
     </div>
   );
 }
