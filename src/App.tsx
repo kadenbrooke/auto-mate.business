@@ -1,5 +1,4 @@
-import React from 'react';
-import { Phone, Rocket, Notebook, ChevronRight, Mail, MapPin, TrendingUp, Clock, DollarSign, MessageCircle, Users, Briefcase } from 'lucide-react';
+import { Phone, Rocket, Notebook, ChevronRight, Mail, MapPin, TrendingUp, Clock, DollarSign, Users, Briefcase } from 'lucide-react';
 
 function Logo() {
   return (
