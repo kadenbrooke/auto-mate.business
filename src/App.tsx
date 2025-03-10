@@ -176,7 +176,7 @@ function App() {
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <Phone className="h-8 w-8 text-accent" />
-              <h3 className="mt-4 text-lg font-medium text-black">Phone</h3>
+              <h3 className="mt-4 text-lg font-medium text-black">Call/Text</h3>
               <p className="mt-2 text-gray-500">(801) 458-3118</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
